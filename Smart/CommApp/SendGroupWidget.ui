@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SendGroupWidget</class>
+ <widget class="QWidget" name="SendGroupWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>654</width>
+    <height>98</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBoxAutoSum">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <item row="1" column="13">
+       <widget class="QPushButton" name="pushButtonSend">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>发送</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="13">
+       <widget class="QPushButton" name="pushButtonSave">
+        <property name="toolTip">
+         <string>保存发送帧至数据库</string>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="13">
+       <widget class="QPushButton" name="pushButtonSendRaw">
+        <property name="text">
+         <string>发送</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEditDest">
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>目标地址(十进制)</string>
+        </property>
+        <property name="text">
+         <string>0002</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="lineEditDID">
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>数据标识</string>
+        </property>
+        <property name="text">
+         <string>0001</string>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBoxCmd">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>命令字</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>读</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>写</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="13">
+       <widget class="QCheckBox" name="checkBoxRaw">
+        <property name="text">
+         <string>原始帧</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="11">
+       <widget class="QCheckBox" name="checkBoxCycle">
+        <property name="text">
+         <string>循环发送</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="11">
+       <widget class="QLineEdit" name="lineEditRaw"/>
+      </item>
+      <item row="3" column="12">
+       <widget class="QSpinBox" name="spinBoxCycleTime">
+        <property name="minimum">
+         <number>200</number>
+        </property>
+        <property name="maximum">
+         <number>10000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="11" colspan="2">
+       <widget class="QCheckBox" name="checkBoxAutoSum">
+        <property name="text">
+         <string>自动计算校验码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3" colspan="10">
+       <widget class="QLineEdit" name="lineEditData">
+        <property name="toolTip">
+         <string>数据域</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="13">
+       <widget class="QComboBox" name="comboBoxTips">
+        <property name="toolTip">
+         <string>命令描述</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="11">
+       <widget class="QLineEdit" name="lineEditReturn">
+        <property name="toolTip">
+         <string>返回数据</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

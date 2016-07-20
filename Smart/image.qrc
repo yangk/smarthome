@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/File">
+        <file>images/comport.png</file>
+        <file>images/Help.png</file>
+        <file>images/quit.png</file>
+        <file>images/stm32.ico</file>
+        <file>mystyle.qss</file>
+        <file>images/open.ico</file>
+        <file>images/Smart_devices.ico</file>
+    </qresource>
+</RCC>
